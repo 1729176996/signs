@@ -28,7 +28,8 @@ $(function(){
         methods:{
             openShow:function(){
                 var _this = this;
-                _this.object = _this.list[0];
+                var index = Math.floor((Math.random()*_this.list.length)); 
+                _this.object = _this.list[index];
                 _this.show = '1';
             },
             look:function(){
